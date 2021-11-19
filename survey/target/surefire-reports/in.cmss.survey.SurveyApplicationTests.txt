@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: in.cmss.survey.SurveyApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.093 s <<< FAILURE! - in in.cmss.survey.SurveyApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customercontroller': Unsatisfied dependency expressed through field 'customerrepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in in.cmss.survey.repositories.CustomerRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property USer found for type CustomerModel!
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in in.cmss.survey.repositories.CustomerRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property USer found for type CustomerModel!
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property USer found for type CustomerModel!
+
